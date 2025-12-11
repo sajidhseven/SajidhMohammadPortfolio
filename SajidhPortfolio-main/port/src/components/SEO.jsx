@@ -2,11 +2,11 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 export default function SEO({
-  title = "Sajid — React Developer | Portfolio",
-  description = "Sajid is a ReactJS frontend developer building responsive and modern web apps. Check projects, skills, and contact info.",
-  url = "https://sajidh-portfolio.vercel.app",
-  image = "https://sajidh-portfolio.vercel.app/Sajidh-Profile.png",
-  canonical = "https://sajidh-portfolio.vercel.app",
+  title = "Sajidh — React Developer | Portfolio",
+  description = "Sajidh is a ReactJS frontend developer building responsive and modern web apps. Check projects, skills, and contact info.",
+  url = "https://sajidh-mohammad-portfolio.vercel.app",
+  image = "https://sajidh-mohammad-portfolio.vercel.app//Sajidh-Profile.png",
+  canonical = "https://sajidh-mohammad-portfolio.vercel.app/",
   jsonLd = null // pass an object if you want JSON-LD
 }) {
   return (
