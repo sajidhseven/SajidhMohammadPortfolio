@@ -1,0 +1,112 @@
+/* src/components/skill-icons.css */
+
+/* Root variables for flexibility */
+.skill-icon-3d {
+  --size: 96px;
+  --radius: 18px;
+  --colA: #ff6b4a;
+  --colB: #ff8b61;
+  --fg: #fff;
+  display: inline-grid;
+  grid-template-rows: 1fr;
+  place-items: center;
+  position: relative;
+  border-radius: 18px;
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 220ms ease;
+  cursor: default;
+  box-sizing: border-box;
+}
+
+/* hover pop */
+.skill-icon-3d:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+
+/* soft rounded white base (outer) */
+.skill-base {
+  position: absolute;
+  width: 92%;
+  height: 92%;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 60%);
+  box-shadow:
+    0 12px 28px rgba(0,0,0,0.35),
+    inset 0 -6px 10px rgba(0,0,0,0.06);
+  z-index: 1;
+}
+
+/* colored badge sitting above base */
+.skill-badge {
+  position: absolute;
+  width: 78%;
+  height: 78%;
+  border-radius: 12px;
+  background: linear-gradient(160deg, var(--colA), var(--colB));
+  box-shadow:
+    0 10px 18px rgba(0,0,0,0.35),
+    inset 0 -6px 12px rgba(0,0,0,0.12),
+    inset 0 4px 10px rgba(255,255,255,0.06);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateZ(8px) rotateX(0deg);
+}
+
+/* inner darker rim for 3D depth */
+.skill-badge::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  box-shadow: inset 0 8px 12px rgba(0,0,0,0.12);
+  pointer-events: none;
+}
+
+/* Content inside badge (text or svg) */
+.badge-inner {
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 86%;
+  height: 86%;
+  text-align: center;
+  user-select: none;
+}
+
+/* small glossy reflection */
+.skill-reflection {
+  position: absolute;
+  top: 6%;
+  left: 6%;
+  width: 46%;
+  height: 22%;
+  background: radial-gradient(120% 60% at 0% 0%, rgba(255,255,255,0.55), rgba(255,255,255,0.08) 40%, transparent 60%);
+  transform: rotate(-20deg);
+  border-radius: 50%;
+  z-index: 4;
+  pointer-events: none;
+}
+
+/* default text label styling */
+.skill-mark-text {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  line-height: 1;
+  display: inline-block;
+  padding: 0 2px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* svg scaling */
+.skill-svg {
+  width: 70%;
+  height: 70%;
+  display: block;
+  fill: none;
+}

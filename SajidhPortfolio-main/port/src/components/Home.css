@@ -1,0 +1,430 @@
+/* Base Styles */
+.home-page {
+  min-height: 100vh;
+  background-color: #141414;
+  color: #ffffff;
+}
+
+.home-content {
+  padding-top: 80px;
+}
+
+/* Hero Section (Not Used - Keep for future) */
+.hero-section {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(20,20,20,1));
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  color: #b3b3b3;
+}
+
+/* Content Section (Not Used - Keep for future) */
+.content-section {
+  min-height: 60vh;
+  padding: 4rem 4%;
+  border-top: 1px solid #333;
+}
+
+.content-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.content-section p {
+  font-size: 1.2rem;
+  color: #b3b3b3;
+  line-height: 1.8;
+}
+
+/* Profile Page / Banner Hero Section */
+.profile-page {
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  display: flex;
+  min-height: 75vh;
+  position: relative;
+}
+
+.profile-banner {
+  align-items: flex-end;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  height: 100%;
+  min-height: 75vh;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 60px 4% 40px;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+}
+
+.banner-content {
+  box-sizing: border-box;
+  font-weight: 700;
+  max-width: 800px;
+  padding: 10px 0 50px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.banner-headline {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.banner-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.banner-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Buttons */
+.play-button,
+.more-info-button {
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 700;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.play-button {
+  background-color: #fff;
+  color: #000;
+}
+
+.play-button:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.more-info-button {
+  background-color: rgba(109, 109, 110, 0.7);
+  color: #fff;
+}
+
+.more-info-button:hover {
+  background-color: rgba(109, 109, 110, 0.5);
+}
+
+.icon-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.spacer {
+  width: 0.5rem;
+}
+
+.label {
+  font-size: 1rem;
+}
+
+.play-button .label {
+  color: #000;
+}
+
+.more-info-button .label {
+  color: #fff;
+}
+
+/* Netflix-style Card Row - Fixed Size, No Scroll */
+.top-row {
+  padding: 2rem 4%;
+  margin-bottom: 2rem;
+}
+
+.row-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.card-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 280px));
+  gap: 1rem;
+  padding: 1rem 0.5rem;
+  justify-content: start;
+}
+
+/* Skill Card - Fixed Max Width */
+.skill-card {
+  width: 100%;
+  max-width: 280px;
+  height: 400px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+/* Card Overlay */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%);
+  padding: 2rem 1.5rem;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.skill-card:hover .card-overlay {
+  opacity: 1;
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.3) 100%);
+}
+
+.card-overlay h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Tablet Responsive (1024px and below) */
+@media (max-width: 1024px) {
+  .banner-headline {
+    font-size: 2.2rem;
+  }
+
+  .banner-description {
+    font-size: 0.95rem;
+  }
+
+  .card-row {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 240px));
+  }
+  
+  .skill-card {
+    max-width: 240px;
+    height: 360px;
+  }
+}
+
+/* Mobile Responsive (768px and below) */
+@media (max-width: 768px) {
+  .home-content {
+    padding-top: 60px;
+  }
+
+  .profile-page {
+    min-height: 60vh;
+  }
+
+  .profile-banner {
+    padding: 40px 4% 30px;
+    min-height: 60vh;
+  }
+
+  .banner-headline {
+    font-size: 2rem;
+  }
+
+  .banner-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .banner-buttons {
+    gap: 12px;
+  }
+
+  .play-button,
+  .more-info-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+
+  .content-section h2 {
+    font-size: 2rem;
+  }
+
+  .content-section p {
+    font-size: 1rem;
+  }
+
+  .card-row {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 200px));
+    gap: 1rem;
+  }
+
+  .skill-card {
+    max-width: 200px;
+    height: 300px;
+  }
+
+  .row-title {
+    font-size: 1.5rem;
+  }
+
+  .card-overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .top-row {
+    padding: 1.5rem 4%;
+  }
+}
+
+/* Small Mobile (480px and below) */
+@media (max-width: 480px) {
+  .home-content {
+    padding-top: 55px;
+  }
+
+  .profile-page {
+    min-height: 50vh;
+  }
+
+  .profile-banner {
+    padding: 30px 4% 20px;
+    min-height: 50vh;
+  }
+
+  .banner-headline {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .banner-description {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+  }
+
+  .banner-buttons {
+    gap: 10px;
+  }
+
+  .play-button,
+  .more-info-button {
+    padding: 7px 14px;
+    font-size: 0.85rem;
+  }
+
+  .spacer {
+    width: 0.3rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .content-section {
+    padding: 3rem 4%;
+  }
+
+  .card-row {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 160px));
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .skill-card {
+    max-width: 160px;
+    height: 280px;
+  }
+
+  .top-row {
+    padding: 1rem 4%;
+  }
+
+  .row-title {
+    font-size: 1.3rem;
+  }
+
+  .card-overlay {
+    padding: 1.5rem 1rem;
+  }
+
+  .card-overlay h3 {
+    font-size: 1rem;
+  }
+}
+
+/* Extra Small Devices (360px and below) */
+@media (max-width: 360px) {
+  .banner-headline {
+    font-size: 1.3rem;
+  }
+
+  .banner-description {
+    font-size: 0.8rem;
+  }
+
+  .play-button,
+  .more-info-button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .skill-card {
+    height: 220px;
+  }
+
+  .row-title {
+    font-size: 1.2rem;
+  }}
+
+.more-info-button{
+  text-decoration: none;
+}
