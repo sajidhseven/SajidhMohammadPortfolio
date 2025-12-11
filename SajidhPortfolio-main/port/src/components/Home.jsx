@@ -36,8 +36,8 @@ const Home = () => {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Sajid",
-    url: "https://sajidh-portfolio.vercel.app",
+    name: "Sajidh",
+    url: "https://sajidh-mohammad-portfolio.vercel.app/",
     jobTitle: "ReactJS Developer",
     sameAs: [
       "https://github.com/sajidhseven",
@@ -49,9 +49,9 @@ const Home = () => {
   const seo = {
     title: "Sajidh — ReactJS Frontend Developer | Portfolio",
     description:
-      "Sajid is a ReactJS frontend developer building responsive, modern web apps using React, Node, Express, MongoDB. View projects, skills and contact details.",
-    url: "https://sajidh-portfolio.vercel.app",
-    image: "https://sajidh-portfolio.vercel.app/og-image.png", // upload og-image.png to /public
+      "Sajidh is a ReactJS frontend developer building responsive, modern web apps using React, Node, Express, MongoDB. View projects, skills and contact details.",
+    url: "https://sajidh-mohammad-portfolio.vercel.app/",
+    image: "https://sajidh-mohammad-portfolio.vercel.app//og-image.png", // upload og-image.png to /public
   };
 
   return (
