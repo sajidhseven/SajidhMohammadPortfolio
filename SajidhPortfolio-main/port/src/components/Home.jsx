@@ -161,7 +161,7 @@ const Home = () => {
               className="skill-card"
               onClick={() => navigate('/projects')}
               style={{
-                backgroundImage: `url(https://res.cloudinary.com/dax1r9pni/image/upload/v1763053320/giphy_fusjmb.gif)`,
+                backgroundImage: `url(https://res.cloudinary.com/dax1r9pni/image/upload/v1768108950/giphy_slrrop.gif)`,
               }}
             >
               <div className="card-overlay">
@@ -206,3 +206,4 @@ const Home = () => {
 };
 
 export default Home;
+
