@@ -42,7 +42,7 @@ const HireMe = () => {
 
         {/* Tagline */}
         <div className="tagline">
-          <p>If you are a Recruiter then definitely call me!</p>
+          {/* <p>If you are a Recruiter then definitely call me!</p> */}
         </div>
 
         {/* Contact Links */}
@@ -65,6 +65,7 @@ const HireMe = () => {
 };
 
 export default HireMe;
+
 
 
 
