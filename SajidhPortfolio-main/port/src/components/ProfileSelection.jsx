@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ProfileSelection.css';
-import Home from './Home';
 
 const ProfileSelection = () => {
   const navigate = useNavigate();
@@ -65,4 +64,5 @@ const ProfileSelection = () => {
 };
 
 export default ProfileSelection;
+
 
