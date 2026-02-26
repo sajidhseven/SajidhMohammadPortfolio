@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from './Navbar';
 import { FaEnvelope, FaPhone, FaLinkedin } from 'react-icons/fa';
 import './Hireme.css';
 
@@ -65,6 +64,7 @@ const HireMe = () => {
 };
 
 export default HireMe;
+
 
 
 
