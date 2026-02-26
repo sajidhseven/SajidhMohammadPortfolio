@@ -8,7 +8,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Home = () => {
   const navigate = useNavigate();
-  // const [selectedProfile, setSelectedProfile] = useState('Developer');
+  const [selectedProfile, setSelectedProfile] = useState('Developer');
   const [backgroundGif, setBackgroundGif] = useState(
     'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExamUzdDg0aWVueG5icjc4N3k5YTY2cDh3dW8zdG4zdmg0cDRhMnJtaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2zbskZp2j8wniE/giphy.gif'
   );
@@ -206,5 +206,6 @@ const Home = () => {
 };
 
 export default Home;
+
 
 
