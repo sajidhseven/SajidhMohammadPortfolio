@@ -51,7 +51,7 @@ const Projects = () => {
         { name: 'Firebase', icon: <SiFirebase /> },
         { name: 'Vercel', icon: <SiVercel /> }
       ],
-      link: 'https://shopping-samantha.vercel.app/',
+      link: 'https://shopping-fintraa.vercel.app/',
       category: 'E-Commerce Website'
     }
   ];
@@ -138,3 +138,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
