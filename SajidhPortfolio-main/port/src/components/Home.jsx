@@ -24,7 +24,6 @@ const Home = () => {
     };
 
     const profile = sessionStorage.getItem('selectedProfile');
-
     setBackgroundGif(
       backgroundGifs[profile] || backgroundGifs['Developer']
     );
@@ -61,6 +60,7 @@ const Home = () => {
         </script>
       </Helmet>
 
+      {/* HERO SECTION */}
       <div
         className="profile-page"
         style={{
@@ -86,9 +86,7 @@ const Home = () => {
               <button
                 className="play-button"
                 type="button"
-                onClick={() =>
-                  window.open('/Sajidh-Resume.pdf', '_blank')
-                }
+                onClick={() => window.open('/Sajidh-Resume.pdf', '_blank')}
               >
                 <FontAwesomeIcon icon={faPlay} />
                 <span className="label">Resume</span>
@@ -108,12 +106,18 @@ const Home = () => {
         </div>
       </div>
 
+      {/* SKILLS SECTION */}
       <div className="top-row">
-        <h2 className="row-title">Top Picks</h2>
+        <h2 className="row-title">Top Pick's for You</h2>
         <div className="card-row">
           <div
             className="skill-card"
             onClick={() => navigate('/skills')}
+            style={{
+              backgroundImage: `url(https://res.cloudinary.com/dax1r9pni/image/upload/v1763053257/giphy_lv2cac.gif)`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}
           >
             <div className="card-overlay">
               <h3>Skills</h3>
@@ -123,6 +127,11 @@ const Home = () => {
           <div
             className="skill-card"
             onClick={() => navigate('/projects')}
+            style={{
+              backgroundImage: `url(https://res.cloudinary.com/dax1r9pni/image/upload/v1768108950/giphy_slrrop.gif)`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}
           >
             <div className="card-overlay">
               <h3>Projects</h3>
@@ -132,6 +141,11 @@ const Home = () => {
           <div
             className="skill-card"
             onClick={() => navigate('/professional')}
+            style={{
+              backgroundImage: `url(https://res.cloudinary.com/dax1r9pni/image/upload/v1763053506/giphy_akghmi.gif)`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}
           >
             <div className="card-overlay">
               <h3>Experience</h3>
@@ -139,6 +153,27 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* CONTACT SECTION */}
+      <div className="top-row">
+        <h2 className="row-title">Continue Watching</h2>
+        <div className="card-row">
+          <div
+            className="skill-card"
+            onClick={() => navigate('/hire-me')}
+            style={{
+              backgroundImage: `url(https://res.cloudinary.com/dax1r9pni/image/upload/v1763053674/giphy_qcp80v.gif)`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}
+          >
+            <div className="card-overlay">
+              <h3>Contact Me</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 };
