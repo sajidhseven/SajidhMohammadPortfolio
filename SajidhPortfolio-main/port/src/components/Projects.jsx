@@ -41,19 +41,19 @@ const Projects = () => {
       category: 'AI'
     },
     {
-      id: 3,
-      title: 'Fashion E-Commerce Store',
-    description: 'Designed and developed a modern e-commerce platform featuring product catalogs, wishlist functionality, shopping cart, and secure authentication, delivering a seamless online shopping experience.',
-      image: Ecom,
-      technologies: [
-        { name: 'ReactJS', icon: <FaReact /> },
-        { name: 'CSS3', icon: <FaCss3Alt /> },
-        { name: 'Firebase', icon: <SiFirebase /> },
-        { name: 'Vercel', icon: <SiVercel /> }
-      ],
-      link: 'https://shopping-fintraa.vercel.app/',
-      category: 'E-Commerce Website'
-    }
+  id: 3,
+  title: 'Fashion E-Commerce Store',
+  description: 'Designed and developed a modern e-commerce platform...',
+  image: Ecom,
+  technologies: [
+    { name: 'ReactJS', icon: <FaReact /> },
+    { name: 'CSS3', icon: <FaCss3Alt /> },
+    { name: 'Firebase', icon: <SiFirebase /> },
+    { name: 'Vercel', icon: <SiVercel /> }
+  ],
+  link: 'https://shopping-fintraa.vercel.app/',
+  category: 'E-Commerce Website'
+}
   ];
 
   useEffect(() => {
@@ -138,4 +138,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
 
