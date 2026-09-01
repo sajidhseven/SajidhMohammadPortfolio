@@ -7,20 +7,20 @@ const Professional = () => {
   const timelineRefs = useRef([]);
 
   const experiences = [
-    {
-      id: 1,
-      position: 'Software Developer - Internship',
-      company: 'D Base Solutions (Jun 2025 - Present)',
-      duration: 'Jun 2025 - Present',
-      type: 'work',
-      technologies: '🔧 ReactJs, ASP.Net, SQL, C#',
-      achievements: [
-        '🧠 Worked on a comprehensive Learning Management System (LMS) optimizing modules for students, instructors, and administrators.',
-        '⚙️ Developed and enhanced front-end components using React.js, Bootstrap, and RESTful APIs.',
-        '⚡ Improved UI responsiveness and performance, ensuring smoother user experiences across web and mobile platforms.'
-      ],
-      side: 'left'
-    },
+    // {
+    //   id: 1,
+    //   position: 'Software Developer - Internship',
+    //   company: 'D Base Solutions (Jun 2025 - Present)',
+    //   duration: 'Jun 2025 - Present',
+    //   type: 'work',
+    //   technologies: '🔧 ReactJs, ASP.Net, SQL, C#',
+    //   achievements: [
+    //     '🧠 Worked on a comprehensive Learning Management System (LMS) optimizing modules for students, instructors, and administrators.',
+    //     '⚙️ Developed and enhanced front-end components using React.js, Bootstrap, and RESTful APIs.',
+    //     '⚡ Improved UI responsiveness and performance, ensuring smoother user experiences across web and mobile platforms.'
+    //   ],
+    //   side: 'left'
+    // },
     {
       id: 2,
       position: 'Software Developer - Internship',
